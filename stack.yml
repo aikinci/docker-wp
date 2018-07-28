@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: UWVqtWVnPEdvLgoRlr5y947DAN9pttC2PY6Sw5c3dJlqhnJ3SACKYXJ7XzwOHEf
+
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: GPrQWtnFzZYD8fX3tGin9MJFepUwRXLCZZSk21XvRwAOPQh4akvwBnPXcOcehyw
